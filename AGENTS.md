@@ -43,6 +43,6 @@
 | `shellfish` | 조개류 |
 | `nut` | 견과류 |
 | `seafood` | 해산물·생선 |
-| `octopus` | 연체류(문어·낙지) |
+| `octopus` | 연체류(문어·낙지·오징어) |
 
 (표는 엔진 `allergens.json` 에서 생성 — `python3 engine/request.py --allergy-groups`, 2026-10-29)
