@@ -15,3 +15,11 @@ jangbogi-handoff 저장소의 manifests/<주차>/coupang.md 를 agents/pickle/IN
 ```
 매주 일요일 저녁 8시에 jangbogi-handoff 저장소 manifests 폴더에서 가장 최근 주차의 coupang.md 를 agents/pickle/INSTRUCTIONS.md 대로 쿠팡 장바구니에 담고, 결제는 하지 말고 결과를 보고해줘.
 ```
+
+## 가격 조사 — 4몰(2026-11-01~, 담지 않음)
+쇼핑몰(`컬리`·`이마트몰`·`네이버 컬리N마트`·`쿠팡`) × 목록(`a`·`b`)마다 **따로 한 번씩** 돌린다. 한 번에 한 몰·한 목록.
+```
+깃허브 저장소 tsetse012/jangbogi-handoff 를 열어서 AGENTS.md 와 agents/pickle/PRICECHECK.md 를 읽어. 저장소가 안 열리면 https://raw.githubusercontent.com/tsetse012/jangbogi-handoff/main/agents/pickle/PRICECHECK.md 로 읽어.
+이번 쇼핑몰은 「컬리」, 조사 목록은 manifests/pricecheck/2026-10-30-top50-a.md 야. PRICECHECK.md 의 「쇼핑몰별 표」에서 컬리 줄의 사이트·고르는 순서·delivery 값만 써서 25행 가격을 조사해줘.
+장바구니 담기·결제·멤버십 가입은 하지 마. 끝나면 본문은 짧게(배송비 안내 문구 원문 한 줄 포함), 맨 끝에 json 코드블록 정확히 1개로 보고해줘.
+```
