@@ -38,3 +38,11 @@ python3 engine/ingest.py --report <피클 보고.txt> --list <같은 목록 파�
 python3 engine/ingest.py --report <피클 보고.txt> --list <같은 목록 파일> [--write]
 ```
 `--list` 가 목록의 `ingredient_key` 열을 요청 키로 쓴다 — 목록에 없는 키가 보고에 오면 병합하지 않는다.
+
+## 재조사 2026-11-02 (컬리 3행 · 네이버 5행 — 몰마다 따로 두 번)
+~~~
+jangbogi-handoff 저장소의 agents/pickle/PRICECHECK.md 대로, 이번 쇼핑몰은 「컬리」, 조사 목록은 manifests/pricecheck/2026-11-02-recheck-kurly.md 야. 목록 맨 위 규칙(상품고시 g 중량만)을 꼭 지켜줘. 담기·결제 금지, 맨 끝에 json 코드블록 정확히 1개.
+~~~
+~~~
+jangbogi-handoff 저장소의 agents/pickle/PRICECHECK.md 대로, 이번 쇼핑몰은 「네이버(컬리N마트)」, 조사 목록은 manifests/pricecheck/2026-11-02-recheck-naver.md 야. 목록 맨 위 규칙(상품고시 g 중량만 · json 블록 1개 · 옵션명 표기)을 꼭 지켜줘. 담기·결제 금지, 맨 끝에 json 코드블록 정확히 1개.
+~~~
