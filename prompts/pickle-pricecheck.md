@@ -46,3 +46,11 @@ jangbogi-handoff 저장소의 agents/pickle/PRICECHECK.md 대로, 이번 쇼핑�
 ~~~
 jangbogi-handoff 저장소의 agents/pickle/PRICECHECK.md 대로, 이번 쇼핑몰은 「네이버(컬리N마트)」, 조사 목록은 manifests/pricecheck/2026-11-02-recheck-naver.md 야. 목록 맨 위 규칙(상품고시 g 중량만 · json 블록 1개 · 옵션명 표기)을 꼭 지켜줘. 담기·결제 금지, 맨 끝에 json 코드블록 정확히 1개.
 ~~~
+
+## 재조사 2026-11-03 (오이·가지 개수 단위 — 컬리 2행 · 네이버 2행, 몰마다 따로 두 번)
+~~~
+jangbogi-handoff 저장소의 agents/pickle/PRICECHECK.md 대로, 이번 쇼핑몰은 「컬리」, 조사 목록은 manifests/pricecheck/2026-11-03-recheck-piece-kurly.md 야. 이번엔 개수 단위(pack_unit "개")야. 목록 맨 위 규칙을 꼭 지켜줘 — 맨 끝 json 코드블록 정확히 1개, 안은 배열, 필드 이름은 PRICECHECK.md 출력 형식 그대로. 담기·결제 금지.
+~~~
+~~~
+jangbogi-handoff 저장소의 agents/pickle/PRICECHECK.md 대로, 이번 쇼핑몰은 「네이버(컬리N마트)」, 조사 목록은 manifests/pricecheck/2026-11-03-recheck-piece-naver.md 야. 이번엔 개수 단위(pack_unit "개")야. 목록 맨 위 규칙을 꼭 지켜줘 — 맨 끝 json 코드블록 정확히 1개, 안은 배열, 필드 이름은 PRICECHECK.md 출력 형식 그대로. 담기·결제 금지.
+~~~
