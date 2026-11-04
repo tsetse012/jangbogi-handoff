@@ -5,7 +5,7 @@
 ## 에이전트가 읽는 순서
 1. [AGENTS.md](AGENTS.md) — 모든 에이전트 공통 규칙(5줄)
 2. `agents/<이름>/INSTRUCTIONS.md` — 자기 지시서 ([pickle](agents/pickle/INSTRUCTIONS.md) · [dot](agents/dot/INSTRUCTIONS.md))
-3. `manifests/<주차>/<쇼핑몰>.md` — 이번 주 명세서 (현재 = [2026-W44/coupang.md](manifests/2026-W44/coupang.md))
+3. `manifests/<주차>/<쇼핑몰>.md` — 이번 주 명세서 (최신 = [2026-W46/emart.md](manifests/2026-W46/emart.md), 끝에 「다음 주 요청서에 붙일 재고」 블록)
 4. 끝나면 [results/TEMPLATE.md](results/TEMPLATE.md) 형식으로 보고
 
 ## 사람(수빈)이 쓰는 것

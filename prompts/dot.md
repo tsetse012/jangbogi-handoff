@@ -16,3 +16,16 @@
 ```
 매주 일요일 저녁 8시에 jangbogi-handoff 저장소를 다시 받아 manifests 에서 가장 최근 주차 coupang.md 를 agents/dot/INSTRUCTIONS.md 대로 쿠팡 장바구니에 담고, 결제는 하지 말고 결과를 채팅에 보고해줘.
 ```
+
+## 이마트몰 담기 + 남은 재료 왕복(EXP-05, 2026-11-04~)
+A(담기·금액 읽기) → B(재고 보관 → 「다음 주야」 → 재료마다 묻기 → on_hand json). 결제·주문서 진입·배송 시간 선택 금지.
+```
+공개 저장소 https://github.com/tsetse012/jangbogi-handoff 를 clone 해서 AGENTS.md 와 agents/dot/CART-EMART-ONHAND.md 를 읽어.
+그 지시서 A 대로 manifests/2026-W46/emart.md 의 6품목을 네 브라우저로 이마트몰(SSG닷컴) 장바구니에 담아줘. 로그인 화면이 나오면 보안 입력 요청을 보내 — 내가 직접 입력할게. 「주문하기」는 누르지 말고 배송 시간도 고르지 마.
+A 보고를 지시서 형식대로 하고, 명세서 끝 재고 블록은 그대로 보관해 둬. 내가 「다음 주야」라고 하면 지시서 B 대로 재료마다 하나씩 물어봐.
+```
+
+## 매주 재고 왕복(EXP-05 통과 뒤 — 예약)
+```
+매주 일요일 저녁 8시에 jangbogi-handoff 저장소를 다시 받아 manifests 에서 가장 최근 주차 명세서를 agents/dot/CART-EMART-ONHAND.md 대로 처리해줘: 먼저 지난주에 보관한 재고 블록의 재료마다 지금 남은 양을 나에게 물어 on_hand json 을 만들어 보고하고, 그다음 이번 주 명세서를 담고(결제 금지) 새 재고 블록을 보관해.
+```

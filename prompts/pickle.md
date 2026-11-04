@@ -37,3 +37,9 @@ jangbogi-handoff 저장소의 manifests/<주차>/coupang.md 를 agents/pickle/IN
 깃허브 저장소 tsetse012/jangbogi-handoff 를 열어서 AGENTS.md 와 agents/pickle/CART-EMART.md 를 읽어. 저장소가 안 열리면 https://raw.githubusercontent.com/tsetse012/jangbogi-handoff/main/agents/pickle/CART-EMART.md 로 읽어.
 그 지시서대로 manifests/2026-W45/emart.md 명세서의 4품목을 이마트몰(SSG닷컴) 장바구니에 담아줘. 담기 전에 장바구니에 이미 있는 상품은 지우지 말고 적어만 둬. 「주문하기」는 누르지 말고 배송 시간도 고르지 마. 끝나면 장바구니 금액 요약 칸의 모든 줄을 화면 그대로 적고, 맨 끝에 json 코드블록 정확히 1개로 보고해줘.
 ```
+
+## 남은 재료 왕복(2026-11-04~) — 명세서 끝 「다음 주 요청서에 붙일 재고」 블록이 있을 때
+담은 뒤 같은 대화에 이어서(또는 다음 주에) 붙인다. 피클은 메모리가 있으니 블록 보관을 맡긴다.
+```
+방금 명세서 맨 끝 「다음 주 요청서에 붙일 재고」 json 블록을 값 그대로 기억해 둬. 다음 주에 내가 장보기 얘기를 꺼내면 먼저 그 블록의 재료마다 하나씩 「지난주 남은 감자 640g — 지금 얼마나 남았어요?」처럼 물어봐. 숫자가 아닌 답(반쯤·조금)은 g 나 개로 다시 묻고, 블록에 없는 재료는 넣지 마. 다 물으면 {"on_hand": [{"key": "potato", "qty": 숫자, "unit": "g"}]} 형식 json 코드블록 1개로 줘 — 0 인 재료는 빼고, key·unit 은 블록 그대로.
+```
