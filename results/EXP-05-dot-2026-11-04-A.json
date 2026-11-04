@@ -1,0 +1,30 @@
+{
+  "exp": "EXP-05",
+  "mall": "emart",
+  "manifest": "manifests/2026-W46/emart.md",
+  "preexisting_items": [
+    {"name": "무 (1입)", "qty": 1, "price": 1580},
+    {"name": "Im perfect 대파 900g", "qty": 1, "price": 2180},
+    {"name": "풀무원 풀무원 소가 찌개두부 300g", "qty": 1, "price": 1580},
+    {"name": "미식생활 친환경 팽이버섯 2입(300g)", "qty": 1, "price": 1780}
+  ],
+  "rows": [
+    {"row": 1, "added": false, "name_on_screen": "무 (1입)", "qty": 1, "list_price": null, "sale_price": 1580, "delivery": "쓱 주간배송", "note": "기존 상품; 1kg 여부 및 명세 상품과 동일 여부 미확인"},
+    {"row": 2, "added": false, "name_on_screen": "Im perfect 대파 900g", "qty": 1, "list_price": null, "sale_price": 2180, "delivery": "쓱 주간배송", "note": "기존 상품; 명세 링크와 상품 ID 다름"},
+    {"row": 3, "added": false, "name_on_screen": "풀무원 풀무원 소가 찌개두부 300g", "qty": 1, "list_price": null, "sale_price": 1580, "delivery": "쓱 주간배송", "note": "기존 상품; 명세 링크와 상품 ID 다름"},
+    {"row": 4, "added": false, "name_on_screen": "미식생활 친환경 팽이버섯 2입(300g)", "qty": 1, "list_price": null, "sale_price": 1780, "delivery": "쓱 주간배송", "note": "기존 상품; 1개 더 증정 표시"},
+    {"row": 5, "added": true, "name_on_screen": "감자 1kg 봉", "qty": 1, "list_price": null, "sale_price": 3480, "delivery": "쓱 주간배송", "note": ""},
+    {"row": 6, "added": true, "name_on_screen": "인큐 애호박 200g (1입)", "qty": 1, "list_price": null, "sale_price": 1580, "delivery": "쓱 주간배송", "note": ""}
+  ],
+  "summary_lines": [
+    {"label": "주문금액", "amount": 12180},
+    {"label": "상품할인", "amount": 0},
+    {"label": "배송비", "amount": 3000},
+    {"label": "총 결제예정금액", "amount": 15180}
+  ],
+  "summary_scope": "includes_preexisting",
+  "shipping_notice": "지금 주문하면 오늘(수) 18:30 까지 도착. 배송시간은 결제 시 변경 가능해요.",
+  "free_shipping_notice": "27,820원 추가하면 무료배송",
+  "stopped_at": "기존 무의 1kg 규격 및 명세 상품 동일 여부 확인 불가",
+  "kept_block": {"on_hand": [{"key": "potato", "qty": 640, "unit": "g"}, {"key": "radish", "qty": 565, "unit": "g"}]}
+}
