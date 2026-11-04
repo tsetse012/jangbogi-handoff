@@ -17,7 +17,7 @@
    - 블록에 없는 재료를 말하면 넣지 않고 「이번 블록에 없는 재료라 넣지 않았어요」라고 적는다.
    - 답으로 `on_hand` 를 만든다: key·unit 은 블록 그대로, qty 는 답한 숫자, **0 인 재료는 뺀다.** 블록이 없으면(첫 주) 이 단계를 건너뛴다.
    - 수빈이 답할 때까지 기다린다. 답 없이 다음 단계로 가지 않는다.
-2. **계산 시작** — 기본 요청서에 `on_hand` 를 붙여 `start_plan_week(request, idempotency_key="<ISO 주차>-plan")` 를 부른다(예 `2026-W46-plan` — 재시도해도 계산이 두 번 돌지 않게). `ok:false` 면 error 원문을 수빈에게 보여주고 멈춘다.
+2. **계산 시작** — 기본 요청서에 `on_hand` 를 붙여 `start_plan_week(request, week="<다음 월요일의 ISO 주차>", idempotency_key="<같은 주차>-plan")` 를 부른다. 🔴 주차는 **장을 볼 주(다음 월요일이 속한 주)** — 일요일은 ISO 기준으로 아직 지난주라, 주차를 비우면 한 주 밀린다(2026-11-04 시험에서 W45 로 찍힘). 예: 일요일 2026-11-08 → `week="2026-W46"`, `idempotency_key="2026-W46-plan"`(재시도해도 계산이 두 번 돌지 않게). `ok:false` 면 error 원문을 수빈에게 보여주고 멈춘다.
 3. **결과 받기** — 계산은 약 7분이다. **60초 이상 간격**으로 `get_plan_result(job_id)` 를 부른다(최대 20분). `status:"error"` 면 원문을 보여주고 멈춘다.
    - `result_status` 가 `needs_clarification` 이면 `clarifications[].question` 을 **그대로** 수빈에게 묻고, 답을 요청서에 반영해 2번부터 다시.
 4. **수빈에게 요약** — `message` 원문 · 총액(`grand_total`) · 몰(`manifests` 의 key) · 식단(`menu_text` 의 「이번 주 메뉴」 줄들)을 짧게. 「담을까요?」라고 묻고 **수빈이 「담아」라고 한 뒤에만** 5번.
